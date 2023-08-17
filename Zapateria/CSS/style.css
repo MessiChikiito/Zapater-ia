@@ -32,22 +32,37 @@ h3 {
     width: auto;
     font-size: 25px;
 }
-section {
-    margin-top: 15px;
-    display: flex; 
-    background: linear-gradient(to top, transparent 30px, rgb(255, 255, 255));
-    justify-content: space-around; 
-    padding: 10px 0; 
+
+
+
+/* Estilos menú */
+.menu {
+    list-style-type: none;
+    margin-top: 2%;
+    padding: 0.5%;
+    padding-left: 3%;
+    background-color: #333;
+    text-align: center;
+    border-radius: 10px 10px 10px 10px;
+    display: inline-block;
+
 }
 
-section h1 {
-    font-size: 25px;
-    margin: 0;
-    padding: 10px;
-    background-color: rgb(230, 178, 206);
-    border-radius: 105%;
-border-style: outset;    
-    color: rgb(83, 82, 82);
-    
-    
+.menu li {
+    display: inline-block;
+    margin-right: 20px;
 }
+
+.menu a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.menu a:hover {
+    color: orange;
+}
+
+
