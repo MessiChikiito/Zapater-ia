@@ -73,6 +73,13 @@ body {
     z-index: 2;
 }
 
+/* Información iframe ubicación */
+
+iframe{
+    border: 2px solid #e32b90;
+    
+}
+
 /* Estilos footer*/
 
 .footer{
