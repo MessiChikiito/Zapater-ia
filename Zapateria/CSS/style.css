@@ -1,35 +1,37 @@
 *{
     margin: 0;
     padding: 0;
-}
+    box-sizing: border-box
+};
+
 
 body {
     margin: 0;
     padding: 0;
-
-    min-height: 100vh;
-    background-color: #dac2c2; 
+    background-color: #dac2c2;
 }
 
-main {
+.encabezado {
+    position: sticky;
+    background: linear-gradient(to right, #ffffff, rgb(255, 106, 131) 55%);
+    width: 100%;
+    top: 0;
+    left: 0;    
+}
+
+.titulo_general {
+    margin-top: -5px;
+    width: 100%;
+    font-size: 45px;
+    display: inline-block;
+    padding-top: 1%;
     text-align: center;
 }
 
-#titulo {
-    margin-top: -5px;
-    background: linear-gradient(to right, transparent 10%, rgb(255, 106, 131) 50%);
-    width: 100vw;
-    font-size: 45px;
-    display: inline-block;
-    padding: 35px; 
-}
-
-h3 {
+.essentials {
     text-decoration: dashed;
-    text-decoration-color: rgb(212, 212, 45);
-    margin-top: -45px;
-    padding: 0;
-    width: auto;
+    text-align: center;
+    padding-left: 5%;
     font-size: 25px;
 }
 
@@ -38,10 +40,9 @@ h3 {
 /* Estilos menú */
 .menu {
     list-style-type: none;
-    margin-top: 2%;
     padding: 0.5%;
-    padding-left: 3%;
-    background-color: #333;
+    width: 100%;
+    background-color: #6b6969;
     text-align: center;
     border-radius: 10px 10px 10px 10px;
     display: inline-block;
@@ -62,7 +63,11 @@ h3 {
 }
 
 .menu a:hover {
-    color: orange;
+    color: rgb(239, 0, 144);
 }
 
+/* Estilos Principal*/
+.imagenes_principal{
+    text-align: center;
 
+}
