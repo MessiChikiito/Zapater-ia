@@ -73,12 +73,26 @@ body {
     z-index: 2;
 }
 
-/* Información iframe ubicación */
+/* Información */
+
+.informacion_main{
+    margin: 3%;
+    display: inline-block;
+}
 
 iframe{
     border: 2px solid #e32b90;
-    
+    display: inline-block;
+    margin-left: 57%;
+    display: block;   
 }
+
+.titulo_informacion{
+    font-size: 40px;
+    color: #e087b8;
+}
+
+
 
 /* Estilos footer*/
 
