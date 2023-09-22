@@ -17,6 +17,7 @@ body {
     width: 100%;
     top: 0;
     left: 0;    
+    z-index: 3;
 }
 
 .titulo_general {
@@ -69,5 +70,44 @@ body {
 /* Estilos Principal*/
 .imagenes_principal{
     text-align: center;
+    z-index: 2;
+}
 
+/* Estilos footer*/
+
+.footer{
+    width: 100%;
+    background: #c1115a88;
+    color: white;
+    margin-top: 1%;
+    overflow-x: auto;
+}
+
+.footer .contenedor_footer{
+    padding-top: 2%;
+    text-align: center;
+    margin: 2%;
+}
+
+.contenedor_footer > h2{
+    color: white;
+}
+
+.contenedor_footer > p {
+    font-size: 18px;
+}
+
+.contenedor_footer .social_net{
+    list-style: none;
+    text-align: center;
+}
+
+.social_net > li{
+    display: inline-block;
+    padding: 1.5%;
+}
+
+.social_net .nets{
+    width: 5%;
+    
 }
