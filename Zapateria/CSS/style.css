@@ -13,7 +13,7 @@ body {
 
 .encabezado {
     position: sticky;
-    background: linear-gradient(to right, #ffffff, rgb(255, 106, 131) 55%);
+    background: linear-gradient(to right, #ffffff,  #e087b8 55%);
     width: 100%;
     top: 0;
     left: 0;    
@@ -77,28 +77,112 @@ body {
 
 .informacion_main{
     margin: 3%;
-    display: inline-block;
 }
 
-iframe{
-    border: 2px solid #e32b90;
-    display: inline-block;
-    margin-left: 57%;
-    display: block;   
-}
-
-.titulo_informacion{
-    font-size: 40px;
+.informacion_main  h2{
+    font-size: 3em;
     color: #e087b8;
+    border-bottom: 1.2px solid #fd008b;
 }
 
+.informacion_main > h2{
+    width: 50%;
+}
+
+.informacion_main > .section1_info{
+    display: flex;
+    align-items: flex-start;
+}
+
+.informacion_main > .section1_info > p{
+    
+    background-color:  #e087b855;
+    width: 48%;
+    margin-top: 1%;
+    font-size: 2em;
+    padding: 2%;
+    padding-top: 3.6%;
+    padding-bottom: 3.6%;
+    border-radius: 5%;
+}
+.informacion_main > .section1_info > img{
+    border: 1px solid #e32b90;
+    margin-left: 7%;
+    margin-top:  1%;
+    width: 580px;
+    height: 740px;
+}
+
+.informacion_main > .section2_info > .h2_info{
+    display: flex;
+}
+
+.h2_f1{
+    margin-top: 15%;
+    width: 50%;
+}
+
+.h2_f2{
+    margin-top: 15%;
+    width: 50%;
+    margin-left: 10%;
+}
+
+.informacion_main > .section2_info > section{
+    display: flex;
+}
+
+.informacion_main > .section2_info > section >iframe{
+    border: 1px solid #e32b90;
+    border-radius: 2%;
+    margin-top: 2%;
+    width: 600px;
+    height: 600px;
+}
+
+.nav_info{
+    border-radius: 2%;
+    margin-left: 10%;
+    margin-top: 2%;
+    width: 600px;
+    height: 600px;
+}
+
+.nav_info > ul{
+    list-style-type: none;
+    text-align: center;
+    font-size: 2em ;
+    padding-bottom: 2%;
+}
+
+.nav_info >ul >li{
+    border-bottom: 2px solid #e32b90;
+    margin-top: 8.5%;
+}
+
+.nav_info > ul >li >a{
+    text-decoration: none;
+    color: #000000;
+}
+
+.nav_info > ul >li >.info_a{
+    text-decoration: none;
+    color: #c6006d;
+}
+
+.nav_info >ul >li > a:hover{
+    transition: 0.4s;
+    color: #81e094;
+    font-size: 34px;
+    cursor: pointer;
+}
 
 
 /* Estilos footer*/
 
 .footer{
     width: 100%;
-    background: #c1115a88;
+    background:  #e087b8;
     color: white;
     margin-top: 1%;
     overflow-x: auto;
