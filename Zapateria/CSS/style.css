@@ -177,6 +177,48 @@ body {
     cursor: pointer;
 }
 
+/*Contacto*/
+
+.main_contacto{
+    margin: 4%;
+}
+
+.main_contacto > section > h2{
+    font-size: 40px;
+    color: #e087b8;
+    border-bottom: 1.2px solid #fd008b;
+    width: 42%;
+}
+
+.formulario{
+    width: 45%;
+    height: auto;
+    display: inline-block;
+    padding: 20px 5px;
+    border: #4b4949;
+}
+
+.formulario > div{
+    font-size: 18px;
+}
+
+.formulario *{
+    width: 85%;
+    display: inline-block;
+    margin-top: 3.5%;
+    font-size: 24px;
+}
+
+.formulario > input{
+
+    width: 93%;
+    outline: none;
+    border: none;
+    border-left: 1px solid #e32b90;
+    border-bottom:  1px solid #e32b90;
+}
+
+
 
 /* Estilos footer*/
 
