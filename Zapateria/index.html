@@ -9,22 +9,54 @@
 </head>
 
 <body>
-    <header class="encabezado">
-        <h1 class="titulo_general">Laura Shoes 
-            <h2 class="essentials">Essentials</h2>
-        </h1>
 
-        <nav>
-            <ul class="menu">
-                <li><a href=""  id="inicio">Inicio</a></li>
-                <li><a href="./pages/guiaTallas.html" id="guiaTallas">Guía de tallas</a></li>  
-                <li><a href="./pages/catalogo.html" id="catalogo">Catálogo</a></li>
-                <li><a href="./pages/outlet.html" id="outlet">Outlet</a></li>
-                <li><a href="./pages/informacion.html" id="informacion">Información</a></li>
-                <li><a href="./pages/contacto.html" id="contacto">Contacto</a></li>
-            </ul>
-        </nav>      
-    </header>
+    <div >
+        
+        <ul class="superior">
+             <li><a class="info" href="">🔥Envíos gratis a partir de $100.000 COP🔥</a></li>
+              <li><a class="casco" href="mailto:contacto@laurashoes.com.co" aria-describedby="a11y-external-message">contacto@laurashoes.com.co</a></li>  
+         <li><a class="tel" href="https://wa.link/laus" aria-describedby="a11y-external-message"> +57 312 456789</a></li>
+        </ul>
+    </div>
+
+
+    <header class="header">
+        <div class="contenedor">
+          <div class="logo">
+            <img src="../Zapateria/img/logo.webp" alt="LogoLaura">
+          </div>
+          <div class="menu">
+            <nav>
+                <ul class="menu">
+                    <li><a href=""  id="inicio">Inicio</a></li>
+                    <li><a href="./pages/guiaTallas.html" id="guiaTallas">Guia tallas</a></li>  
+                    <li><a href="./pages/catalogo.html" id="catalogo">Catálogo</a></li>
+                    <li><a href="./pages/outlet.html" id="outlet">⚡REBAJAS⚡</a></li>
+                    <li><a href="./pages/informacion.html" id="informacion">Información</a></li>
+                    <li><a href="./pages/contacto.html" id="contacto">Contacto</a></li>
+                </ul>
+            </nav>
+          </div>
+          <div class="buscador">
+            <li>
+              <form action="">
+                <input
+                  type="text"
+                  class="buscarVisible"
+                  name="buscar"
+                  id="input_buscar"
+                  placeholder="  Buscar productos..."
+                  maxlength="20"
+                  
+                />
+                <a href="#" id="buscando">
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                </a>
+              </form>
+            </li>
+          </div>
+        </div>
+      </header>
 
     <main>
         <section class="imagenes_principal" id="imagenesPrincipal">
@@ -43,16 +75,39 @@
 
     <footer class="footer">
         <div class="contenedor_footer">
-            <h2 class="subtitulo">
-                DERECHOS RESERVADOS LAURA-SHOES
-            </h2>
+            
+
+          <section class="contenedor_suscribirse">
+            <h2 class="subtitulo">Suscribete para recibir nuestras novedades</h2>
+            <input type="email" 
+                name="contact[email]" 
+                id="ContactFooter-email" 
+                class="suscribirse" 
+                value="" 
+                placeholder="Dirección de correo electrónico" aria-label="Dirección de correo electrónico" aria-required="true" 
+                required="" 
+                autocorrect="off" 
+                autocapitalize="off">
+            </input>
+            <button type="submit" id="btnSend" class="button_send">
+                SUSCRIBIRSE
+              </button>
+
+          </section>
+            <p>DERECHOS RESERVADOS LAURA SHOES by essentials</p>
             <p>Siguenos en nuestras redes sociales</p>
             <ul class="social_net">
                 <li><a href=""><img class="nets" src="./img/facebook.png" alt="Facebook"></a></li>
                 <li><a href=""><img class="nets" src="./img/instagram.png" alt="iInstagram"></a></li>
             </ul>
         </div>
+        
+
     </footer>
+    <script
+      src="https://kit.fontawesome.com/36d8ee555a.js"
+      crossorigin="anonymous"
+    ></script>
     <script src="./scripts/main.js"></script>
 </body>
 </html>
