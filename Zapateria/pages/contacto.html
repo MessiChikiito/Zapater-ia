@@ -61,31 +61,41 @@
     <main class="main_contacto">
 
         <section class="section1_contact">
-            <h2>¡Deja tus datos, te contactamos!</h2>
-
-            <form class="formulario">
+            
+            <h2>¡Deja tus datos para no perderte de nuestras ofertas especiales!</h2>
+            <form class="formulario" id="formulario">
 
                 <label for="names">Nombres:</label>
-                <input type="text"/>
+                <input type="text" id="names" />
                 <label for="lastNames">Apellidos:</label>
-                <input type="text" />
+                <input type="text" id="lastNames" />
                 <label for="mail">Correo Electrónico:</label>
-                <input type="email" />
+                <input type="email" id="mail" />
                 <label for="celphone">Celular:</label>
-                <input type="number" /><br />          
-                <div>Al enviar sus datos acepta los terminos y condiciones de tratamiento de datos de usuario</div>
-                <button type="submit" id="btnSend" class="button_send">
-                    Enviar
-                </button>
-                <button type="reset" id="btnClear" class="button_clear">
-                    Limpiar
-                </button>
+                <input type="number" id="celphone" class="celphone" /><br />          
+                <p>*Al enviar sus datos acepta los terminos y condiciones de tratamiento de datos de usuario.</p>
+                <div>
+                    <button type="submit" id="btnSend" class="button_send">
+                        Enviar
+                    </button>
+                    <button type="reset" id="btnClear" class="button_clear">
+                        Limpiar
+                    </button>
+                </div>
             </form>
-    </section>
+        </section>
 
-    <section class="section2_contact">
-
-    </section>
+        <section class="section2_contact">
+            <h2>Datos de Contacto</h2>
+            <nav class="nav_contact">
+                <ul>
+                    <li><a class="contact_f" href="https://www.facebook.com/p/Laura-Montoya-Shoes-100063693094584/" target="_blank">¡Síguenos en facebook!</a></li>
+                    <li><a class="contact_i" href="https://instagram.com/laurashoesoficial?utm_medium=copy_link" target="_blank">¡Síguenos en Instagram!</a></li>
+                    <li><a class="contact_a" href="../pages/outlet.html">¡Super Ofertas!</a></li>
+                    <li><a class="contact_a" href="https://wa.link/2166qr" target="_blank">¿No sabes que comprar?. Te asesoramos </a></li>
+                </ul>
+            </nav>
+         </section>
     
     </main>
     <footer class="footer">
@@ -95,10 +105,11 @@
             </h2>
             <p>Siguenos en nuestras redes sociales</p>
             <ul class="social_net">
-                <li><a href=""><img class="nets" src="./img/facebook.png" alt="Facebook"></a></li>
-                <li><a href=""><img class="nets" src="./img/instagram.png" alt="iInstagram"></a></li>
+                <li><a href=""><img class="nets" src="../img/facebook.png" alt="Facebook"></a></li>
+                <li><a href=""><img class="nets" src="../img/instagram.png" alt="iInstagram"></a></li>
             </ul>
         </div>
     </footer>
+    <script src="../scripts/main.js"></script>
 </body>
 </html>
