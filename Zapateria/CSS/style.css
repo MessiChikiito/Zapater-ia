@@ -29,6 +29,7 @@ body {
     text-align: center;
 }
 
+a
 .essentials {
     text-decoration: dashed;
     text-align: center;
@@ -49,6 +50,7 @@ body {
     display: inline-block;
 
 }
+
 
 .menu li {
     display: inline-block;
