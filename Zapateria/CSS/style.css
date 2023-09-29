@@ -181,7 +181,7 @@ HEAD
 
 .h2_f1{
     margin-top: 15%;
-    width: 50%;
+    width: 50%; 
 }
 
 .h2_f2{
@@ -502,4 +502,11 @@ HEAD
 
 .social_net .nets{
     width: 5%;
+}
+/* Guia de tallas */
+
+.main_guiaTallas{
+    margin: 3%;
+    display: flex;
+    align-items: flex-start;
 }
