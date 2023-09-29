@@ -81,11 +81,41 @@ a
     text-align: center;
 
 }
-/*secciones*/
-.main .imgMain{
+/*IAMGEN DEL MAIN*/
+
+.slider {
+    width: 100%;
+    height: 50vh; 
+    overflow: hidden;
+    position: relative;
+}
+
+.slide {
+    width: 100%;
+    height: 100%;
     display: flex;
-    text-align: center;
-    width: 100px;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    opacity: 0;
+    animation: fade 5s ease infinite;
+}
+
+.slide img {
+    
+    object-fit: cover;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+    30%{
+        opacity: 1;
+    }
+    60%{
+        opacity: 0;
+    }
 }
 
 
@@ -158,56 +188,47 @@ a
 }
 
 
-.card_body {
-    display: inline-block;
-    width: 40%; 
-    font-size: 16px;
-    list-style: none;
-    font-weight: bold;
-    color: #e06fa0;
-    border: 1px solid #000000; 
-    border-radius: 15px; 
-    padding: 10px; 
-    transition: all 0.3s ease; 
-  }
-  
-  .card_body:hover {
-    background-color: #f7e7f0; 
-    transform: scale(1.05); 
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
-  }
-  
-  .catalogo {
+
+.catalogo {
     text-align: center;
     padding: 20px;
+    text-decoration: none;
 }
 
 .lista-productos {
     list-style: none;
     padding: 0;
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: wrap; /* mantener este si ponemos mas productos en el cat porque los va bajando*/
     justify-content: center;
+    text-decoration: none;
 }
 
 .producto {
     width: 300px;
-    margin: 20px;
+    margin: 20px; /* bordee alrededor de la imagen no apliarlo mucho */
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 2px 5px rgba(88, 88, 88, 0.2);
     text-align: center;
+    font-size: 16px;
+    font-style: none;
+    text-decoration: none;
 }
 
 .producto img {
-    max-width: 100%;
+    max-width: 100%; /* ajusta la imagen segun el contenedor de arriba producto */
     height: auto;
 }
 
 .precio {
     font-weight: bold;
-    color: #0077b5;
+    color: #b500ac;
+    text-decoration: none;
+}
+.titulo_Catalogo{
+    border-bottom:1px solid #100f0f !important ;
 }
 
 /**************************/
@@ -653,16 +674,13 @@ HEAD
     color: white;
     margin-top: 1%;
     overflow-x: auto;
+    display: flex;
 }
 
-.footer .contenedor_footer{
-    display: inline-block;
-    padding-top: 1%;
-    text-align: center;
-    margin: 2%;
-}
+
 .contenedor_suscribirse{
     text-align: left;
+    margin-bottom: 10%;
     
 }
 
@@ -680,20 +698,51 @@ HEAD
 
 
 .social_net > li{
-    display: inline-block;
+    display: flex;
     
 }
 
 .social_net .nets{
+    display: flex;
     width: 5%;
     
 }
 
 
 .footer .contenedor_footer{
-    padding-top: 2%;
-    text-align: center;
+    display: flex; 
+    justify-content: space-between;
+    padding-top: 1%;
+    align-items: center;
     margin: 2%;
+}
+.contenedor_suscribirse,
+.contenedor_derechos {
+    flex: 1; /* Permite que las secciones ocupen el mismo espacio dentro del contenedor */
+    padding: 10px; /* Agrega un espacio de padding alrededor de cada sección */
+    text-align: center; /* Centra el contenido en cada sección */
+}
+
+/* boton footer suscribirse  */
+.button_send {
+    background-color: #6b6969cf;
+    border: 1px solid #fd008b;
+    
+    font-size: 20px;
+    font-weight: 500;
+    color: #ffffff;
+    cursor: pointer;
+    transition: all 0.05s linear;
+}
+
+.button_send:hover {
+    background-color: #f50086;
+    border: 1px solid #fd008b;
+    font-size: 22px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.5 linear;
+    color: #ffffff;
 }
 
 .contenedor_footer > h2{
