@@ -765,10 +765,76 @@ HEAD
 .social_net .nets{
     width: 5%;
 }
-/* Guia de tallas */
 
-.main_guiaTallas{
-    margin: 3%;
-    display: flex;
-    align-items: flex-start;
+/*guia de tallas*/
+
+.div class .main_section2_guiaTallas {
+    display: block;
+   background-color: #e087b8;
+    margin-top: 2%;
+    text-align: center;
+    width: 80%;
+    border-radius: 20px;
 }
+ 
+.section2_guiaTallas {
+    overflow-clip-margin: content-box; 
+    height: auto;
+    width: 30%;
+    margin: 5%;
+    padding: auto;
+    display: block;
+    align-items: flex-start;
+    border-radius: 10px;
+    border: 3px solid #f626ad;
+    transition: transform 0.3s ease;   
+}
+
+.section2_guiaTallas p {
+    display: flex
+}
+/* ofertas */
+
+.ofertas {
+    display: block;
+  }
+  
+  .ofertas {
+    margin: 10px;
+    text-align: center;
+  }
+  
+  .oferta_Brads {
+    width: 150px;
+    height: auto;
+    border: 2px solid #f626ad;
+    border-radius: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .oferta img:hover {
+    transform: scale(1.1);
+  }
+  
+  .oferta p {
+    font-size: 14px;
+    margin: 8px 0;
+  }
+
+  .oferta_julieta  {
+    width: 150px;
+    height: auto;
+    border: 2px solid #f626ad;
+    border-radius: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  .oferta_Nataly  {
+    width: 150px;
+    height: auto;
+    border: 2px solid #f626ad;
+    border-radius: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
